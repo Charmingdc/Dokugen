@@ -1,8 +1,16 @@
+import CodeSnippet from '../components/helpers/CodeSnippet.tsx';
 import { LiaAngleRightSolid } from "react-icons/lia";
 import { SlCloudDownload } from "react-icons/sl";
 
 
 const Home = () => {
+ const installCode = `
+  # install dokugen from npm or other registry
+  # make sure to install globally when installing dokugen using the -g flag
+ 
+  npm install -g dokugen
+ `;
+ 
  return (
    <section className='home-section'>
      <div className='brief-info'>
@@ -26,7 +34,17 @@ const Home = () => {
        </p>
      </div>
      
-     <div className='home-codebox'>
+     <div className='home-code-wrapper'>
+      <div className='home-code-wrapper-tabs'>
+       <button> Installing </button>
+       <button> Usage </button>
+      </div>
+      
+      <div className='home-codebox'>
+        <CodeSnippet 
+          lang='bash'
+          code={installCode} />
+      </div>
      </div>
    </section>
  )

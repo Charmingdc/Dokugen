@@ -98,6 +98,11 @@ section {
  padding: 6rem 6%;
 }
 
+.code-snippet {
+ height: 100%;
+ background-color: transparent;
+}
+
 .home-section {
  justify-content: center;
  gap: 2rem;
@@ -139,10 +144,31 @@ section {
  text-align: center;
 }
 
+.home-code-wrapper {
+ width: 100%;
+ height: 20rem;
+ background-color: var(--bg-color);
+ border: 0.060rem solid var(--sclr);
+}
+
+.home-code-wrapper-tabs {
+ width: 100%;
+ height: 3.5rem;
+ display: flex;
+ align-self: center;
+ justify-content: space-evenly;
+}
+.home-code-wrapper-tabs button {
+ width: 100%;
+ min-width: 10rem;
+ color: var(--text-color);
+ background-color: transparent;
+ border: none;
+ border-bottom: 0.140rem solid var(--sclr);
+}
 .home-codebox {
  width: 100%;
- min-height: 20rem;
- border: 0.060rem solid var(--sclr);
+ height: 14rem;
 }
 
 code {
