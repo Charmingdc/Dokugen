@@ -1,6 +1,7 @@
 :root {
  --text-color: rgb(240, 240, 240);
- --bg-color: rgb(10, 10,10);
+ --bg-color: rgb(10, 10, 25);
  --shade: rgb(18, 18, 18);
- --accent: rgb(64, 123, 255);
+ --sclr: rgb(64, 13, 200);
+ --home-gradient: rgba(64, 123, 200, 0.4);
 }
