@@ -1,7 +1,15 @@
 :root {
- --text-color: rgb(240, 240, 240);
- --bg-color: rgb(10, 10, 25);
- --shade: rgb(18, 18, 18);
- --sclr: rgb(64, 13, 200);
- --home-gradient: rgba(64, 123, 200, 0.4);
+  --text-color: rgb(240, 240, 240);
+  --bg-color: rgb(10, 10, 25);
+  --shade: rgb(30, 30, 30);
+  --sclr: rgb(64, 13, 200);
+  --home-gradient: rgba(64, 123, 200, 0.4);
+}
+
+/* Light Mode */
+.light {
+  --text-color: rgb(20, 20, 20);
+  --bg-color: rgb(240, 250, 255);
+  --shade: rgb(230, 230, 230);
+  --home-gradient: rgba(84, 143, 250, 0.3);
 }

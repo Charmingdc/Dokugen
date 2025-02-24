@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import copy from "clipboard-copy";
   
 import CodeSnippet from '../components/helpers/CodeSnippet.tsx';
-import { LiaAngleRightSolid } from "react-icons/lia";
 import { SlCloudDownload } from "react-icons/sl";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -11,6 +10,7 @@ import { IoCopyOutline } from "react-icons/io5";
 const Home = () => {
  const [currentTab, setCurrentTab] = useState<string>('installing');
  const [copied, setCopied] = useState<boolean>(false);
+ const navigate = useNavigate();
  
  let installCode: string;
  if (currentTab === 'installing') {
@@ -54,18 +54,13 @@ const Home = () => {
          Your one stop CLI tool to automatically generate high-quality README files for your projects. Spend less time on documentation and more time building! 🚀
        </p>
        
-       <button>
+       <button onClick={() => navigate('/download')}>
          Download Dokugen 
          <SlCloudDownload />
        </button>
        
        <p>
-        <strong> Dokugen </strong> can also be installed via
-         <a href='/' target='_blank'>
-         <strong>
-           version managers like npm.
-         </strong>
-        </a>
+        <strong> Dokugen </strong> can also be installed via <a href='https://www.npmjs.com/package/dokugen' target='_blank'><strong>version managers like npm.</strong></a>
        </p>
      </div>
      

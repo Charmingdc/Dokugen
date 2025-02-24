@@ -40,6 +40,12 @@ button {
  font-weight: 600;
 }
 
+.flex-center {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
 .navbar {
  width: 90%;
  height: 4rem;
@@ -67,17 +73,33 @@ button {
 
 .drop-down {
  align-self: flex-start;
- width: 95%;
+ width: 90%;
  min-height: 16rem;
  position: fixed;
  display: flex;
  flex-direction: column;
  align-self: flex-start;
- padding: 6rem 0 0 5%;
- gap: 1.4rem;
+ padding: 5rem 5% 0 5%;
  background-color: var(--bg-color);
+ border-bottom: 0.080rem solid var(--shade);
  list-style: none;
  transition: 200ms;
+}
+
+.drop-down li {
+ height: 3rem;
+ display: flex;
+ align-items: center;
+}
+
+.drop-down li:last-of-type {
+ justify-content: space-between;
+ border-top: 0.080rem solid var(--shade);
+}
+.drop-down li:last-of-type button {
+ color: var(--text-color);
+ background-color: transparent;
+ border: none;
 }
 
 .drop-down a {
@@ -85,8 +107,8 @@ button {
  color: var(--text-color);
  text-decoration: none;
 }
-.drop-down span {
- margin: 1rem 0 0 .8rem;
+.drop-down svg {
+ margin: 0 0 -.2rem .4rem;
 }
 
 section {
