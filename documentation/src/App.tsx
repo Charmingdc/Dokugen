@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 import Layout from './components/Layout.tsx';
-const Home = lazy(() => import('./pages/Home.tsx'));
+import Home from './pages/Home.tsx';
 const Installation = lazy(() => import('./pages/Installation.tsx'));
 
 

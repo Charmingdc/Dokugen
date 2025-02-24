@@ -29,22 +29,26 @@ const NavBar = () => {
      style={{left: openMenu ? '0' : '-100%'}}
      onClick={() => setOpenMenu(!openMenu)}>
     <li>
-     <Link to='/installation'>
-      Docs 
-      
-      <span>
-       <FiExternalLink />
-      </span>
+     <Link to='/about'>
+      About
      </Link>
     </li>
     
     <li>
-     <a href='https://github.com/samueltuoyo1/Dokugen' target='_blank'>
-       Github
-       
-       <span> 
-        <FaGithubAlt />
-       </span>
+     <Link to='/download'>
+      Download
+     </Link>
+    </li>
+    
+    <li>
+     <Link to='/installation'>
+      Docs
+     </Link>
+    </li>
+    
+    <li>
+     <a href='https://github.com/samueltuoyo1/Dokugen' target='_blank'> 
+       Contribute
      </a>
     </li>
    </ul>

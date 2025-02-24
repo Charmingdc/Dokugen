@@ -68,7 +68,7 @@ button {
 .drop-down {
  align-self: flex-start;
  width: 95%;
- min-height: 20rem;
+ min-height: 16rem;
  position: fixed;
  display: flex;
  flex-direction: column;
@@ -146,7 +146,7 @@ section {
 
 .home-code-wrapper {
  width: 100%;
- height: 20rem;
+ height: auto;
  background-color: var(--bg-color);
  border: 0.060rem solid var(--sclr);
 }
@@ -164,11 +164,24 @@ section {
  color: var(--text-color);
  background-color: transparent;
  border: none;
- border-bottom: 0.140rem solid var(--sclr);
+ margin-bottom: -0.5rem;
 }
 .home-codebox {
  width: 100%;
  height: 14rem;
+}
+
+.home-copy-button {
+ width: 100%;
+ height: 3.5rem;
+ padding: 0 5%;
+ color: var(--text-color);
+ background-color: var(--bg-color);
+ border: none;
+ border-top: 0.080rem solid var(--shade);
+}
+.home-copy-button svg {
+ margin: 0rem 0 -.2rem .8rem;
 }
 
 code {
@@ -176,12 +189,31 @@ code {
 }
 
 
-
+footer {
+ padding: 1rem 0;
+ gap: .6rem;
+ background-color: var(--bg-color);
+ border-top: 0.1rem solid var(--shade);
+}
 
 @media (min-width: 726px) {
+ .home-section {
+  min-height: 80vh;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem 6rem;
+ }
+ .home-section > div {
+  width: 50%;
+  margin-top: -3rem;
+ }
+ .brief-info {
+  margin-bottom: -5rem;
+ }
+ 
  .home-section p {
-  width: 60%;
-  text-align: center;
+  width: 80%;
+  text-align: left;
   line-height: 1.5rem;
  }
 }

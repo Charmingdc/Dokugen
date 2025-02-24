@@ -14,6 +14,15 @@ const Layout = () => {
    </main>
   
    <footer>
+     <p>
+      Copyright © {new Date().getFullYear()}
+     </p>
+     <p>
+       Built by 
+       <a href='https://github.com/samueltuoyo1' target='_blank'>
+         <strong> Samuel Tuoyo </strong>
+       </a>
+     </p>
    </footer>
   </>
  )
